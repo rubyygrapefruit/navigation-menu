@@ -14,6 +14,29 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
+### What you will see in this project:
+
+https://github.com/rubyygrapefruit/navigation-menu/assets/39013404/be4c1ac7-6f7c-4038-8ade-675b6effff7a
+
+Navbar -> Submenu -> Sub-submenu 
+
+## Navbar 
+- Hovering on a nav title will allow the active title to be black while the others will change grey. 
+- Each nav title can be clicked into (if url is applicable)
+- Navbar is sticky when user scrolls down the page 
+
+## Submenu 
+- Hovering on a submenu title will allow the active submenu title to be black while the others will change grey.
+- Each submenu title can be clicked into (if url is applicable)
+
+##  Sub-Submenu 
+- Hovering over a submenu title will allow a sub-submenu to show up on the right side.
+- Each sub-submenu image can be clicked into (if url is applicable)
+
+## Homepage Logo 
+- Clicking on the logo will open the homepage
+
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
