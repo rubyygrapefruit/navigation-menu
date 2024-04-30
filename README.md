@@ -28,6 +28,8 @@ Navbar -> Submenu -> Sub-submenu
 ## Submenu 
 - Hovering on a submenu title will allow the active submenu title to be black while the others will change grey.
 - Each submenu title can be clicked into (if url is applicable)
+- If there is a sub-submenu, there is a right chevron icon to indicate there is more to see.
+- If there is no sub-submenu, a sparkle icon appears on hover to show which submenu is active. 
 
 ##  Sub-Submenu 
 - Hovering over a submenu title will allow a sub-submenu to show up on the right side.
