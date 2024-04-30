@@ -1,24 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import TopNav from './Components/Menus/TopNav';
+import { menuData, homepageUrl } from './DefaultData/pageData';
+import { copy, images } from './DefaultData/pageData';
+import Hero from './Components/Hero/Hero';
 
-function App() {
+const App = () => {
+  const { title } = copy
+  const { myLogo, heroImg } = images
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+      <nav className="menu__container">
+        <a href={homepageUrl}>
+          <img src={myLogo.src} className="my-logo" alt={myLogo.alt} />
         </a>
-      </header>
+        <ul className="menu__list">
+          {menuData.map((menu) => (
+            <TopNav
+              key={menu.id}
+              id={menu.id}
+              name={menu.name}
+              url={menu.url}
+              submenus={menu.submenus} />
+          ))}
+        </ul>
+      </nav>
+      <Hero title={title}
+        img={heroImg}
+        className="hero"
+        titleClassName="hero__title" />
     </div>
   );
 }
